@@ -5,11 +5,9 @@ class MenuItem extends React.Component {
 	render() {
 		var className = this.props.current ? 'active' : '';
 		return (
-			<li className={className}>
-				<a href={'#/' + this.props.anchor}>
+			<a className="btn btn-primary btn-sm " href={'#/' + this.props.anchor}>
 					{this.props.title}
-				</a>
-			</li>
+			</a>
 		);
 	}
 }

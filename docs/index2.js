@@ -180,7 +180,9 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
             var  userInfo = {name:'张三丰',thumbnails:yeomanImage,account:5000};
 			return (
 				<div>
-					<Nav userInfo = {userInfo} />
+                    <div class="page-header">
+					    <Nav userInfo = {userInfo} />
+                    </div>
 					<MainContainer>
 						<Sidebar>
                             {ALL_PAGES.map((eachGroup, i) =>
