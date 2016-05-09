@@ -13,7 +13,8 @@ myConfig.module.loaders = myConfig.module.loaders.concat([
 
 myConfig.entry = {
 	"react-stockcharts-home": "./docs/index.js",
-	"react-stockcharts-documentation": "./docs/documentation.js"
+	"react-stockcharts-documentation": "./docs/documentation.js",
+	"react-stockcharts-index2": "./docs/index2.js"
 };
 
 var Prism = require('prismjs'); ///components/prism-core

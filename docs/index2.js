@@ -42,7 +42,7 @@ var CHART_TYPES = {
 		require("lib/page/HorizontalStackedBarChartPage").default,
 		require("lib/page/CandleStickChartPage").default,
 		require("lib/page/VolumeBarPage").default,
-		// TODO add OHLC chart 
+		// TODO add OHLC chart
 		require("lib/page/HeikinAshiPage").default,
 		require("lib/page/KagiPage").default,
 		require("lib/page/PointAndFigurePage").default,
@@ -74,7 +74,7 @@ var INDICATORS = {
 		require("lib/page/ForceIndexIndicatorPage").default,
 		require("lib/page/ElderRayIndicatorPage").default,
 		require("lib/page/ElderImpulseIndicatorPage").default,
-	] 
+	]
 }
 
 var INTERACTIVE = {
@@ -96,11 +96,11 @@ var CUSTOMIZATION = {
 }
 
 var ALL_PAGES = [
-	DOCUMENTATION,
-	CHART_TYPES,
+	//DOCUMENTATION,
+	//CHART_TYPES,
 	CHART_FEATURES,
-	INDICATORS,
-	INTERACTIVE,
+	//INDICATORS,
+	//INTERACTIVE,
 	// CUSTOMIZATION, TODO
 ];
 
@@ -176,13 +176,15 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
 		}
 		render() {
 			var Page = this.state.selectedPage;
+            var yeomanImage = require('./images/yeoman.png');
+            var  userInfo = {name:'张三丰',thumbnails:yeomanImage,account:5000};
 			return (
 				<div>
-					<Nav />
+					<Nav userInfo = {userInfo} />
 					<MainContainer>
 						<Sidebar>
-							{ALL_PAGES.map((eachGroup, i) => 
-								<div key={i}>
+                            {ALL_PAGES.map((eachGroup, i) =>
+								<div key={i} className="col-sm-3 col-md-2 ">
 									<h4>{eachGroup.head}</h4>
 									<MenuGroup>
 										{eachGroup.pages.map((eachPage, idx) => <MenuItem key={idx} current={eachPage === this.state.selectedPage} title={eachPage.title} anchor={compressString(eachPage.title)} />)}
@@ -190,7 +192,8 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
 								</div>
 							)}
 						</Sidebar>
-						<Page someData={data}
+
+						<Page  someData={data}
 								lotsOfData={dataFull}
 								compareData={compareData}
 								bubbleData={bubbleData}
@@ -198,6 +201,7 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
 								groupedBarData={groupedBarData}
 								horizontalBarData={horizontalBarData}
 								horizontalGroupedBarData={horizontalGroupedBarData}/>
+
 					</MainContainer>
 				</div>
 			);
