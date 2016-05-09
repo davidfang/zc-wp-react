@@ -34,27 +34,6 @@ var UpdatingDataPage = React.createClass({
 						</TypeChooser>
 					</Section>
 				</Row>
-				<Row>
-					<Section colSpan={2}>
-						<TypeChooser>
-							{(type) => <KagiWithUpdatingData data={this.props.someData} type={type} />}
-						</TypeChooser>
-					</Section>
-				</Row>
-				<Row>
-					<Section colSpan={2}>
-						<TypeChooser>
-							{(type) => <PointAndFigureWithUpdatingData data={this.props.someData} type={type} />}
-						</TypeChooser>
-					</Section>
-				</Row>
-				<Row>
-					<Section colSpan={2}>
-						<TypeChooser>
-							{(type) => <RenkoWithUpdatingData data={this.props.someData} type={type} />}
-						</TypeChooser>
-					</Section>
-				</Row>
 			</ContentSection>
 		);
 	}

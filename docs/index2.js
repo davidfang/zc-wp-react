@@ -180,7 +180,7 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
             var  userInfo = {name:'张三丰',thumbnails:yeomanImage,account:5000};
 			return (
 				<div>
-                    <div class="page-header">
+                    <div className="page-header">
 					    <Nav userInfo = {userInfo} />
                     </div>
 					<MainContainer>
