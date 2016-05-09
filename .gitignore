@@ -1,0 +1,8 @@
+node_modules
+.idea
+build
+.tmp
+.sass-cache
+/tmp
+.fuse*
+npm-debug.log
