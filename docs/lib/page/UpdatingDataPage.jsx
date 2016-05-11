@@ -23,11 +23,11 @@ var UpdatingDataPage = React.createClass({
 		return (
 			<ContentSection title={UpdatingDataPage.title}>
 				<Row>
-					<Section colSpan={2}>
+					<Section colSpan={2} >
 						<aside dangerouslySetInnerHTML={{__html: require('md/UPDATING-DATA')}}></aside>
 					</Section>
 				</Row>
-				<Row>
+				<Row  title={UpdatingDataPage.title}>
 					<Section colSpan={2}>
 						<TypeChooser>
 							{(type) => <CandleStickChartWithUpdatingData data={this.props.someData} type={type} />}

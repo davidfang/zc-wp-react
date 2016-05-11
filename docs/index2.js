@@ -153,7 +153,8 @@ function renderPage(data, dataFull, compareData, bubbleData, barData, groupedBar
 
 	var firstPage = (selectedPage.length === 0) ? pages[0] : selectedPage[0];
 
-	// console.log(selected, selectedPage, firstPage);
+	 //console.log(selected, selectedPage, firstPage);
+	 console.log([selected, selectedPage, firstPage]);
 	class ExamplesPage extends React.Component {
 		constructor(props) {
 			super(props);

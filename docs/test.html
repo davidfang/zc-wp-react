@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- custom:remove -->
+    <script src="d3/d3.js"></script>
+    <script src="react/dist/react.js"></script>
+    <script src="react-dom/dist/react-dom.js"></script>
+
+    <!-- endcustom -->
+
+    <!-- custom:cssinclude https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css -->
+    <!-- custom:cssinclude https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.css -->
+
+    <!-- custom:remove -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="prismjs/themes/prism.css" rel="stylesheet">
+    <!-- endcustom -->
+    <!--
+    <link href="remarkable-loader/node_modules/highlight.js/styles/default.css" rel="stylesheet">
+    -->
+    <style>
+        body {
+            padding-top: 70px;/*有顶部固定导航条时设置*/
+            padding-bottom: 70px;/*有底部固定导航条时设置*/
+        }
+    </style>
+</head>
+<body>
+<!-- Placed at the end of the document so the pages load faster -->
+<span id="debug_here">debug here</span>
+<div id="chart-goes-here"></div>
+
+<script type="text/javascript" src="dist/react-stockcharts-docs-core.js"></script>
+<script type="text/javascript" src="dist/react-stockcharts-test.js"></script>
+<!-- custom:remove -->
+<script type="text/javascript" src="/webpack-dev-server.js"></script>
+<!-- endcustom -->
+</body>
+</html>
