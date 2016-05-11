@@ -231,8 +231,8 @@ d3.tsv("data/MSFT_full.tsv", (err2, MSFTFull) => {
 								}
 							});
 
-						renderPage(MSFT, MSFTFull, compareData, bubbleData, barData, groupedBarData, horizontalBarData, horizontalGroupedBarData);
-						// renderPartialPage(MSFT, MSFTFull, compareData, bubbleData, barData, groupedBarData, horizontalBarData);
+                        renderPage(MSFT, MSFTFull, compareData, bubbleData, barData, groupedBarData, horizontalBarData, horizontalGroupedBarData);
+                        //renderPartialPage(MSFT, MSFTFull, compareData, bubbleData, barData, groupedBarData, horizontalBarData);
 					});
 				});
 			})
